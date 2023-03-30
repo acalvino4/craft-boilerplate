@@ -1,0 +1,15 @@
+/.env
+/.idea
+.DS_Store
+
+/vendor
+/node_modules
+
+/web/dist
+/web/uploads
+/web/favicon.ico
+
+/tests/_craft/storage
+/tests/_output
+/tests/_craft/config/project/*
+/tests/Support/_generated
