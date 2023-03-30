@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: home
+name: Home
+propagationMethod: all
+siteSettings:
+  0c8865cf-6d96-411d-a006-084bb1f2c88a: # boilerplate
+    enabledByDefault: true
+    hasUrls: true
+    template: page/home
+    uriFormat: __home__
+type: single

@@ -1,0 +1,51 @@
+dateModified: 1680201728
+email:
+  fromEmail: boilerplate@gmail.com
+  fromName: boilerplate
+  replyToEmail: null
+  template: ''
+  transportSettings:
+    host: $MAIL_HOST
+    password: $MAIL_PASS
+    port: $MAIL_PORT
+    useAuthentication: '1'
+    username: $MAIL_USER
+  transportType: craft\mail\transportadapters\Smtp
+meta:
+  __names__:
+    0c8865cf-6d96-411d-a006-084bb1f2c88a: boilerplate # boilerplate
+    8d1502bd-9991-4b16-b550-3761f6ed061c: Home # Home
+    884e6ef3-b1d0-4321-9994-93767a94b2e8: Home # Home
+    e0761766-6736-49e9-9a5b-3d7b3a9e03f9: boilerplate # boilerplate
+    eae6388b-45fe-4218-a084-a97310884eef: Common # Common
+plugins:
+  navigation:
+    edition: standard
+    enabled: true
+    licenseKey: C1U7U9KUI3RT9P6I94WV25CU
+    schemaVersion: 2.0.7
+  palette:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  seomatic:
+    edition: standard
+    enabled: true
+    licenseKey: EDWKMKUT2MOBGDY2Z5ERE4BQ
+    schemaVersion: 3.0.11
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: pro
+  live: true
+  name: boilerplate
+  schemaVersion: 4.4.0.4
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

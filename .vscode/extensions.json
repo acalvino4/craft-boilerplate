@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "xdebug.php-debug",
+    "whatwedo.twig",
+    "neilbrayfield.php-docblocker",
+    "bmewburn.vscode-intelephense-client",
+    "esbenp.prettier-vscode",
+    "cerzat43.twigcs",
+    "samverschueren.linter-xo",
+    "bradlc.vscode-tailwindcss"
+  ]
+}

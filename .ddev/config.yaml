@@ -1,4 +1,4 @@
-name: craft
+name: boilerplate
 type: craftcms
 docroot: web
 php_version: "8.2"
@@ -13,11 +13,11 @@ database:
   version: "14"
 nfs_mount_enabled: false
 mutagen_enabled: false
+project_tld: local
 use_dns_when_possible: true
 composer_version: "2"
 web_environment: []
 nodejs_version: "18"
-project_tld: local
 
 # Key features of ddev's config.yaml:
 

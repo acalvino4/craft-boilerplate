@@ -11,17 +11,22 @@
 use craft\config\GeneralConfig;
 use craft\helpers\App;
 
+$isDev = App::env('CRAFT_ENVIRONMENT') === 'dev';
+$isProd = App::env('CRAFT_ENVIRONMENT') === 'production';
+
 return GeneralConfig::create()
-    // Set the default week start day for date pickers (0 = Sunday, 1 = Monday, etc.)
-    ->defaultWeekStartDay(1)
-    // Prevent generated URLs from including "index.php"
+    ->defaultWeekStartDay(0)
     ->omitScriptNameInUrls()
-    // Enable Dev Mode (see https://craftcms.com/guides/what-dev-mode-does)
-    ->devMode(App::env('DEV_MODE') ?? false)
-    // Preload Single entries as Twig variables
+    ->devMode($isDev)
     ->preloadSingles()
-    // Allow administrative changes
-    ->allowAdminChanges(App::env('ALLOW_ADMIN_CHANGES') ?? false)
-    // Disallow robots
-    ->disallowRobots(App::env('DISALLOW_ROBOTS') ?? false)
+    ->allowAdminChanges($isDev)
+    ->disallowRobots(!$isProd)
+    ->privateTemplateTrigger('')
+    ->errorTemplatePrefix('error/')
+    ->cpTrigger('CHANGEME')
+    ->sendPoweredByHeader(false)
+    ->aliases([
+        '@web' => App::env('PRIMARY_SITE_URL'),
+    ])
+    ->cacheDuration(86400)
 ;

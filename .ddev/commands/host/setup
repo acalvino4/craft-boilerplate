@@ -1,0 +1,13 @@
+#!/bin/zsh
+
+## Description: Run setup for a newly cloned site
+## Usage: setup
+## Example: ddev setup
+
+ddev npm install
+ddev composer install
+ddev craft install
+ddev craft setup/app-id
+ddev craft setup/security-key
+ddev build
+npm run prepare

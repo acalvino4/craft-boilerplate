@@ -1,7 +1,10 @@
 {
-  "name": "craft",
+  "name": "boilerplate",
   "type": "module",
   "version": "1.0.0",
+  "engines": {
+    "node": "^18"
+  },
   "scripts": {
     "test": "xo && tsc",
     "fix": "xo --fix",

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    {{ craft.vite.script("src/scripts/index.ts", false, {defer: true}) }}
+    {# Begin favicon #}
+    <link rel="icon" href="{{ craft.vite.asset('favicon/favicon.ico', true) }}" sizes="any">
+    <link rel="icon" href="{{ craft.vite.asset('favicon/favicon.svg', true) }}" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="{{ craft.vite.asset('favicon/favicon-180.png', true) }}">
+    <link rel="manifest" href="/manifest.webmanifest">
+    {# End favicon #}
+  </head>
+  <body class="flex flex-col min-h-screen">
+    {% include 'common/header' %}
+    <main class='grow flex flex-col'>
+      {% block main %}
+      {% endblock %}
+    </main>
+    {% include 'common/footer' %}
+  </body>
+</html>
