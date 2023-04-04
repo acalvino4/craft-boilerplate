@@ -6,7 +6,6 @@
 use craft\helpers\App;
 
 use yii\redis\Session;
-use craft\behaviors\SessionBehavior;
 
 return [
     'id' => App::env('CRAFT_APP_ID') ?: 'CraftCMS',
@@ -21,7 +20,8 @@ return [
                 'database' => 3,
             ];
 
+            // @phpstan-ignore-next-line
             return Craft::createObject($config);
-        }
-    ]
+        },
+    ],
 ];

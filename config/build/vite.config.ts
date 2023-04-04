@@ -28,17 +28,14 @@ export default defineConfig(({command}) => ({
 		viteStaticCopy({
 			targets: [
 				{
-					src: 'src/favicon/*',
-					dest: 'favicon/',
-				},
-				{
-					src: 'src/favicon/favicon.ico',
+					src: 'src/public/favicon/favicon.ico',
 					dest: '..',
 				},
 			],
 		}),
 	],
 	server: {
+		origin: 'https://boilerplate.local:3000',
 		host: '0.0.0.0',
 		port: 3000,
 	},
@@ -52,4 +49,5 @@ export default defineConfig(({command}) => ({
 			'@fonts': '/src/fonts', // eslint-disable-line @typescript-eslint/naming-convention
 		},
 	},
+	publicDir: 'src/public',
 }));

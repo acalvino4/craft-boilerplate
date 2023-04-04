@@ -1,5 +1,6 @@
-@config '../../config/build/tailwind.config.ts';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "@styles/font.css";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@config '../../config/build/tailwind.config.ts';

@@ -64,6 +64,7 @@ Now you can create a new repo.
   - `.env.example`
   - `.ddev/config.yaml`
   - `.vscode/launch.json`
+  - `config/build/vite.config.ts`
   - throughout `config/project` directory
 - Update `cpTrigger` in `config/general.php` to something interesting/appropriate for project
 - Update `email.fromEmail` in `config/project/project.yaml` to the appropriate email that should send system email
@@ -109,13 +110,19 @@ This project is setup to use [tailwindcss](https://tailwindcss.com/), so you sho
 
 ### Favicons
 
-All you need to do is drop a few specific files into the `src/favicon` directory. The build process and templates will take care of the rest. See [this guide](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs) for details on creating various icons formats (an svg should always be the master image from which all others are generated).
+All you need to do is drop a few specific files into the `src/public/favicon` directory. The build process and templates will take care of the rest. See [this guide](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs) for details on creating various icons formats (an svg should always be the master image from which all others are generated).
 
 - `favicon.ico`, a 32x32 image in ico format
 - `favicon.svg`, an svg configured for both light and dark contexts
 - `favicon-180.png`, a 180x180 png for apple touch icon, preferably with a background color and 20px of padding
 - `favicon-192.png`, a 192x192 png for andorid home screen links
 - `favicon-512.png`, a 512x512 png for android splash screens
+
+Add the project's brand icon and logo to the `storage/rebrand/icon` and `storage/rebrand/logo` directories, respectively, to customize the control panel. Make sure it is configured for light and dark contexts.
+
+### Fonts
+
+Google fonts is recommended, and just involves pasting a couple lines into `wrapper.twig`. [Variable fonts](https://web.dev/variable-fonts/#variable-fonts-on-google-fonts) are highly recommended, and you can [limit your search to them](https://fonts.google.com/?vfonly=true) on google, though you have to [manually compose](https://web.dev/variable-fonts/#variable-fonts-on-google-fonts) the link. If you need to use a custom font, ensure it is in `woff2` format for best performance, place the files in `src/fonts`, and put your corresponding `@font-face` rules in `src/styles/font.css`.
 
 ### Upstream updates
 

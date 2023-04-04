@@ -1,4 +1,4 @@
-dateModified: 1680201728
+dateModified: 1680621447
 email:
   fromEmail: boilerplate@gmail.com
   fromName: boilerplate
@@ -41,8 +41,9 @@ system:
   edition: pro
   live: true
   name: boilerplate
+  retryDuration: null
   schemaVersion: 4.4.0.4
-  timeZone: America/Los_Angeles
+  timeZone: America/Denver
 users:
   allowPublicRegistration: false
   defaultGroup: null

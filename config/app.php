@@ -21,11 +21,10 @@
  */
 
 use craft\helpers\App;
-use yii\redis\Cache;
-use yii\queue\redis\Queue;
 use craft\mutex\Mutex as CraftMutex;
+use yii\queue\redis\Queue;
+use yii\redis\Cache;
 use yii\redis\Mutex as YiiMutex;
-
 
 return [
     'id' => App::env('CRAFT_APP_ID') ?: 'CraftCMS',
@@ -76,5 +75,5 @@ return [
 
             return Craft::createObject($config);
         },
-    ]
+    ],
 ];

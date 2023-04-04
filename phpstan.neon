@@ -4,4 +4,8 @@ includes:
 parameters:
     level: 8
     paths:
+        - .twig_cs.php
+        - bootstrap.php
+        - ecs.php
+        - config
         - modules
