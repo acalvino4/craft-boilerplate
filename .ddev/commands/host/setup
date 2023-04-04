@@ -4,6 +4,9 @@
 ## Usage: setup
 ## Example: ddev setup
 
+if [[ ! -e .env ]]; then
+    cp .env.example.dev .env
+fi
 ddev npm install
 ddev composer install
 ddev craft install

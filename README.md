@@ -61,7 +61,7 @@ Now you can create a new repo.
 - Fork repo on github, then clone to local.
 - Replace all instances of `boilerplate` with the project name
   - `package.json`
-  - `.env.example`
+  - `.env.example.dev`
   - `.ddev/config.yaml`
   - `.vscode/launch.json`
   - `config/build/vite.config.ts`
