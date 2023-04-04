@@ -1,21 +1,30 @@
-dateModified: 1680621447
+dateModified: 1680641250
 email:
   fromEmail: boilerplate@gmail.com
   fromName: boilerplate
   replyToEmail: null
-  template: ''
+  template: ""
   transportSettings:
-    host: $MAIL_HOST
-    password: $MAIL_PASS
-    port: $MAIL_PORT
-    useAuthentication: '1'
-    username: $MAIL_USER
+    host: $MAILHOG_SMTP_HOSTNAME
+    password: $MAILHOG_SMTP_PASSWORD
+    port: $MAILHOG_SMTP_PORT
+    useAuthentication: "1"
+    username: $MAILHOG_SMTP_USER
   transportType: craft\mail\transportadapters\Smtp
+fs:
+  main:
+    hasUrls: true
+    name: Main
+    settings:
+      path: "@webroot/uploads"
+    type: craft\fs\Local
+    url: "@web/uploads"
 meta:
   __names__:
     0c8865cf-6d96-411d-a006-084bb1f2c88a: boilerplate # boilerplate
     8d1502bd-9991-4b16-b550-3761f6ed061c: Home # Home
     884e6ef3-b1d0-4321-9994-93767a94b2e8: Home # Home
+    94625918-54bc-4e00-a797-2c1843796c67: Main # Main
     e0761766-6736-49e9-9a5b-3d7b3a9e03f9: boilerplate # boilerplate
     eae6388b-45fe-4218-a084-a97310884eef: Common # Common
 plugins:
