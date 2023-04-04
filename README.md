@@ -30,6 +30,7 @@ Local development requirements:
 - Build process preconfigured
   - js bundling and minification
   - css bundling and minification
+  - custom font bundling
   - manifest for cache invalidation
   - subresource integrity
 - VSCode integration preconfigured
@@ -47,7 +48,7 @@ Local development requirements:
 
 When starting a new project, first update dependencies on boilerplate. This will ensure boilerplate is kept up to date while making this batch of updates simpler for the current site.
 
-- `git clone git@github.com:acalvino4/craft-boilerplate.git`
+- `git clone https://github.com/acalvino4/craft-boilerplate.git`
 - `git checkout -b update-m-y`
 - `ddev update` for automatic updates
 - `ddev composer outdated` && `ddev npm outdated` to check for manual updates
@@ -74,10 +75,10 @@ Now you can create a new repo.
 
 ## Local Setup
 
-- `git clone git@github.com:acalvino4/<site-name>.git`
-- `cd <site-name>`
-- `ddev setup`
-- Download database backup from staging or production, and import with command below
+- Ensure local dev requirments are met
+- Navigate to directory where you wish to setup project
+- Run `composer create-project acalvino4/boilerplate`
+- Download database backup from staging or production, and import with command from next section
 
 ## Development
 
@@ -128,7 +129,7 @@ Google fonts is recommended, and just involves pasting a couple lines into `wrap
 
 If a website's needs would apply to the majority of webstites, make them on the [boilerplate repo](https://github.com/acalvino4/craft-boilerplate) and then merge them into your site. This way, we can take advantage of your improvement for all our sites. To merge changes from the boilerplate into your site:
 
-- `git remote add boilerplate git@github.com:acalvino4/craft-boilerplate.git` (only needs to be done once)
+- `git remote add boilerplate https://github.com/acalvino4/craft-boilerplate.git` (only needs to be done once)
 - checkout new branch
 - `git fetch boilerplate`
 - `git merge boilerplate/master`
