@@ -71,13 +71,14 @@ Now you can create a new repo.
 - Update `email.fromEmail` in `config/project/project.yaml` to the appropriate email that should send system email
 - Follow favicon instructions at bottom of this doc
 - Delete this "Creating New Project" section
+- Delete or modify `LICENSE.md` as appropriate for your project
 - Commit and push
 
 ## Local Setup
 
 - Ensure local dev requirments are met
 - Navigate to directory where you wish to setup project
-- Run `composer create-project acalvino4/boilerplate`
+- Run `composer create-project acalvino4/boilerplate --no-install`
 - Download database backup from staging or production, and import with command from next section
 
 ## Development

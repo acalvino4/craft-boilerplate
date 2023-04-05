@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "faffe5fbaba31ba6e4b428165f37f6d5",
+    "content-hash": "734f8d8ea857580c98a569b7ac75b221",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -678,16 +678,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "4.4.6",
+            "version": "4.4.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "81bc48f0ce79dbdaac30b618ec8af746479334fa"
+                "reference": "33aa044641a37b7ffbee271b9b817410370a8bca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/81bc48f0ce79dbdaac30b618ec8af746479334fa",
-                "reference": "81bc48f0ce79dbdaac30b618ec8af746479334fa",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/33aa044641a37b7ffbee271b9b817410370a8bca",
+                "reference": "33aa044641a37b7ffbee271b9b817410370a8bca",
                 "shasum": ""
             },
             "require": {
@@ -793,7 +793,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2023-04-04T17:06:49+00:00"
+            "time": "2023-04-04T21:57:06+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -7967,16 +7967,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.10",
+            "version": "1.10.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "f1e22c9b17a879987f8743d81533250a5fff47f9"
+                "reference": "8aa62e6ea8b58ffb650e02940e55a788cbc3fe21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/f1e22c9b17a879987f8743d81533250a5fff47f9",
-                "reference": "f1e22c9b17a879987f8743d81533250a5fff47f9",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/8aa62e6ea8b58ffb650e02940e55a788cbc3fe21",
+                "reference": "8aa62e6ea8b58ffb650e02940e55a788cbc3fe21",
                 "shasum": ""
             },
             "require": {
@@ -8025,7 +8025,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-04-01T17:06:15+00:00"
+            "time": "2023-04-04T19:17:42+00:00"
         },
         {
             "name": "psy/psysh",

@@ -1,4 +1,7 @@
 {
+  "name": "acalvino4/craft-boilerplate",
+  "description": "A modern, opinionated Craft CMS boilerplate repo",
+  "license": "MIT",
   "require": {
     "craftcms/cms": "^4.4.0",
     "nystudio107/craft-seomatic": "4.0.23",
