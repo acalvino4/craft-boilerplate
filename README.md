@@ -16,8 +16,8 @@ Platform requirments:
 
 Local development requirements:
 
-- [ddev](https://ddev.readthedocs.io/en/stable/#macos-homebrew)
-- [tableplus](https://formulae.brew.sh/cask/tableplus)
+- [ddev](https://ddev.readthedocs.io/en/stable/#macos-homebrew) - manages platform requirements for you
+- [tableplus](https://formulae.brew.sh/cask/tableplus) - local db client
 
 ## Features
 
@@ -46,21 +46,19 @@ Local development requirements:
 
 ### Creating New Project
 
-When starting a new project, first update dependencies on boilerplate. This will ensure boilerplate is kept up to date while making this batch of updates simpler for the current site.
+Run command to clone
+Be prompted for project name, and auto-update where possible
+commit all changes, run setup
 
-- `git clone https://github.com/acalvino4/craft-boilerplate.git`
-- `git checkout -b update-m-y`
-- `ddev update` for automatic updates
-- `ddev composer outdated` && `ddev npm outdated` to check for manual updates
-- perform manual updates
-- check for php, node, redis, and postgres LTS updates, and perform if availible and compatible (updating this README and the ddev config)
-- run tests
-- push and merge
+Manually, set cp trigger, email
 
-Now you can create a new repo.
+Ensure local development requirements are met. Then, just run
 
-- Fork repo on github, then clone to local.
-- Replace all instances of `boilerplate` with the project name
+`composer create-project --no-install acalvino4/boilerplate PATH`
+
+Some things need to be done manually since they are specific to each new project:
+
+- Replace all instances of "boilerplate" with your project name
   - `package.json`
   - `composer.json`
   - `.env.example.dev`
@@ -70,17 +68,24 @@ Now you can create a new repo.
   - throughout `config/project` directory
 - Update `cpTrigger` in `config/general.php` to something interesting/appropriate for project
 - Update `email.fromEmail` in `config/project/project.yaml` to the appropriate email that should send system email
+- Update `<repo-url>` and `<project-name>` in local setup instructions
 - Follow favicon instructions at bottom of this doc
-- Delete this "Creating New Project" section
 - Delete or modify `LICENSE.md` as appropriate for your project
-- Commit and push
+- Delete this "Creating New Project" section
+- `git add -A; git commit -a -m "initial project scaffolding";`
+- `git remote add origin <repo-url>; git push;`
 
 ## Local Setup
 
-- Ensure local dev requirments are met
-- Navigate to directory where you wish to setup project
-- Run `composer create-project acalvino4/boilerplate --no-install`
-- Download database backup from staging or production, and import with command from next section
+Ensure local dev requirments are met. Then, navigate to directory where you wish to setup project and run
+
+```sh
+git clone <repo-url>
+cd <project-name>
+ddev setup
+```
+
+Download database backup from staging or production, and import with command from next section
 
 ## Development
 
@@ -129,7 +134,7 @@ Google fonts is recommended, and just involves pasting a couple lines into `wrap
 
 ### Upstream updates
 
-If a website's needs would apply to the majority of webstites, make them on the [boilerplate repo](https://github.com/acalvino4/craft-boilerplate) and then merge them into your site. This way, we can take advantage of your improvement for all our sites. To merge changes from the boilerplate into your site:
+If a website's needs would apply to the majority of webstites, make them on the [boilerplate repo](https://github.com/acalvino4/craft-boilerplate) and then merge them into your site. This way, we can take advantage of your improvement for all derivative sites. To merge changes from the boilerplate into your site:
 
 - `git remote add boilerplate https://github.com/acalvino4/craft-boilerplate.git` (only needs to be done once)
 - checkout new branch
