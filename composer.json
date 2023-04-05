@@ -1,7 +1,15 @@
 {
   "name": "acalvino4/craft-boilerplate",
   "description": "A modern, opinionated Craft CMS boilerplate repo",
+  "version": "0.1.1",
+  "homepage": "https://github.com/acalvino4/craft-boilerplate",
   "license": "MIT",
+  "authors": [
+    {
+      "name": "Augustine Calvino",
+      "homepage": "https://github.com/acalvino4"
+    }
+  ],
   "require": {
     "craftcms/cms": "^4.4.0",
     "nystudio107/craft-seomatic": "4.0.23",
