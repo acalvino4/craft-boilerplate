@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "734f8d8ea857580c98a569b7ac75b221",
+    "content-hash": "435213af5e552264f44f9b1f1dbe45fd",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -3108,16 +3108,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.17.1",
+            "version": "1.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "d3753fcb3abc6f78f5de6f72153d4b9c99c72dee"
+                "reference": "882eabc9b6a12e25c27091a261397f9c8792e722"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/d3753fcb3abc6f78f5de6f72153d4b9c99c72dee",
-                "reference": "d3753fcb3abc6f78f5de6f72153d4b9c99c72dee",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/882eabc9b6a12e25c27091a261397f9c8792e722",
+                "reference": "882eabc9b6a12e25c27091a261397f9c8792e722",
                 "shasum": ""
             },
             "require": {
@@ -3147,9 +3147,9 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.17.1"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.18.0"
             },
-            "time": "2023-04-04T11:11:22+00:00"
+            "time": "2023-04-06T07:26:43+00:00"
         },
         {
             "name": "pixelandtonic/imagine",
@@ -7579,6 +7579,50 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "acalvino4/craft-twig-ruleset",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/acalvino4/craft-twigruleset.git",
+                "reference": "dde9a4d760ef9a98e58b3c37051636dd7e4a1f56"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/acalvino4/craft-twigruleset/zipball/dde9a4d760ef9a98e58b3c37051636dd7e4a1f56",
+                "reference": "dde9a4d760ef9a98e58b3c37051636dd7e4a1f56",
+                "shasum": ""
+            },
+            "require": {
+                "friendsoftwig/twigcs": "^6.2"
+            },
+            "require-dev": {
+                "craftcms/ecs": "dev-main",
+                "craftcms/phpstan": "dev-main"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Acalvino4\\CraftTwigRuleset\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "acalvino4"
+                }
+            ],
+            "description": "A twig coding style ruleset for the Craft community",
+            "homepage": "https://github.com/acalvino4/craft-twigruleset",
+            "support": {
+                "issues": "https://github.com/acalvino4/craft-twigruleset/issues",
+                "source": "https://github.com/acalvino4/craft-twigruleset/tree/1.0.2"
+            },
+            "time": "2023-04-06T15:57:26+00:00"
+        },
         {
             "name": "craftcms/ecs",
             "version": "dev-main",

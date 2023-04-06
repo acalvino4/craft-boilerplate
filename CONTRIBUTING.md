@@ -1,8 +1,8 @@
 # Contributing
 
-## Updates
+## Updating
 
-General updates are best done whenever creating a new project since that new project had best start out on the right foot with the latest versions, and doing such kills two birds with one stone.
+General updates are best done whenever creating a new project since that new project had best start out on the right foot with the latest versions, and doing such kills two birds with one stone by also keeping this template updated.
 
 - `git clone https://github.com/acalvino4/craft-boilerplate.git`
 - `git checkout -b update-mm-yyyy`
