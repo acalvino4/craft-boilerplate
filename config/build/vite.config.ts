@@ -2,7 +2,10 @@ import {defineConfig} from 'vite';
 import manifestSRI from 'vite-plugin-manifest-sri';
 import viteRestart from 'vite-plugin-restart';
 import {viteStaticCopy} from 'vite-plugin-static-copy';
-import postcssConfig from './postcss.config.js';
+import autoprefixer from 'autoprefixer';
+import tailwindcss from 'tailwindcss';
+import type {Plugin} from 'postcss';
+import tailwindConfig from './tailwind.config.js';
 
 export default defineConfig(({command}) => ({
 	base: command === 'serve' ? '' : '/dist/',
@@ -14,6 +17,7 @@ export default defineConfig(({command}) => ({
 		rollupOptions: {
 			input: {
 				app: 'src/scripts/index.ts',
+				cp: 'src/scripts/cp.ts',
 			},
 			output: {
 				sourcemap: true,
@@ -40,7 +44,9 @@ export default defineConfig(({command}) => ({
 		port: 3000,
 	},
 	css: {
-		postcss: postcssConfig,
+		postcss: {
+			plugins: [tailwindcss(tailwindConfig) as Plugin, autoprefixer()],
+		},
 	},
 	resolve: {
 		alias: {

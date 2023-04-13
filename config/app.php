@@ -22,6 +22,7 @@
 
 use craft\helpers\App;
 use craft\mutex\Mutex as CraftMutex;
+use modules\cpassets;
 use yii\queue\redis\Queue;
 use yii\redis\Cache;
 use yii\redis\Mutex as YiiMutex;
@@ -76,4 +77,6 @@ return [
             return Craft::createObject($config);
         },
     ],
+    'modules' => ['cp-assets' => cpassets\Module::class],
+    'bootstrap' => ['cp-assets'],
 ];
