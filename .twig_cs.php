@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Acalvino4\CraftTwigRuleset\CraftRuleset;
+use acalvino4\crafttwigruleset\CraftRuleset;
 use FriendsOfTwig\Twigcs\Config\Config;
 use FriendsOfTwig\Twigcs\Finder\TemplateFinder;
 

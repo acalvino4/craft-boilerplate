@@ -77,6 +77,8 @@ return [
             return Craft::createObject($config);
         },
     ],
-    'modules' => ['cp-assets' => cpassets\Module::class],
+    'modules' => [
+        'cp-assets' => cpassets\Module::class,
+    ],
     'bootstrap' => ['cp-assets'],
 ];

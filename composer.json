@@ -11,6 +11,7 @@
     }
   ],
   "require": {
+    "acalvino4/craft-embed-implicit-default": "^1.0",
     "craftcms/cms": "^4.4.0",
     "nystudio107/craft-seomatic": "4.0.23",
     "nystudio107/craft-vite": "4.0.5",
