@@ -1,5 +1,5 @@
-import type {Alpine as AlpineType} from 'alpinejs';
-import Alpine from 'alpinejs';
+import type {Alpine} from 'alpinejs';
+import alpine from 'alpinejs';
 import ui from '@alpinejs/ui';
 import focus from '@alpinejs/focus';
 import '@styles/index.css';
@@ -12,12 +12,13 @@ if (import.meta.hot) {
 }
 
 declare global {
-	// eslint-disable-next-line @typescript-eslint/naming-convention, no-var
-	var Alpine: AlpineType;
+	// eslint-disable-next-line no-var
+	var alpine: Alpine;
 }
+type AlpineCallback = (alpine: Alpine) => void;
 
-Alpine.plugin(ui);
-Alpine.plugin(focus);
+alpine.plugin(ui as AlpineCallback);
+alpine.plugin(focus as AlpineCallback);
 
-window.Alpine = Alpine;
-Alpine.start();
+window.alpine = alpine;
+alpine.start();
