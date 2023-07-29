@@ -29,4 +29,5 @@ return GeneralConfig::create()
         '@web' => App::env('PRIMARY_SITE_URL'),
     ])
     ->cacheDuration(86400)
+    ->upscaleImages(false)
 ;

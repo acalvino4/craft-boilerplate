@@ -4,3 +4,18 @@
 @import "@styles/font.css";
 
 @config '../../config/build/tailwind.config.ts';
+
+@layer utilities {
+  /*
+    Turns an image tag into the background image of it's parent element.
+    See https://nystudio107.com/blog/the-css-background-image-property-as-an-anti-pattern.
+  */
+  .bg {
+    @apply absolute w-full h-full object-cover inset-0 -z-10;
+  }
+}
+
+img,
+video {
+  @apply object-cover;
+}

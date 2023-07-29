@@ -11,8 +11,7 @@ additional_fqdns: []
 database:
   type: postgres
   version: "14"
-nfs_mount_enabled: false
-mutagen_enabled: false
+upload_dirs: [uploads]
 project_tld: local
 use_dns_when_possible: true
 composer_version: "2"
