@@ -1,4 +1,4 @@
-dateModified: 1684876228
+dateModified: 1691602338
 email:
   fromEmail: boilerplate@gmail.com
   fromName: boilerplate
@@ -28,6 +28,14 @@ meta:
     e0761766-6736-49e9-9a5b-3d7b3a9e03f9: boilerplate # boilerplate
     eae6388b-45fe-4218-a084-a97310884eef: Common # Common
 plugins:
+  blur-hash:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  easy-image:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   embed-implicit-default:
     edition: standard
     enabled: true
@@ -45,7 +53,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: EDWKMKUT2MOBGDY2Z5ERE4BQ
-    schemaVersion: 3.0.11
+    schemaVersion: 3.0.12
   vite:
     edition: standard
     enabled: true

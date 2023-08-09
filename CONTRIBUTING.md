@@ -17,6 +17,7 @@ General updates are best done whenever creating a new project since that new pro
 
 - svg build process?
 - CKEditor/Vizy setup
+  - Color / Background Color / Fonts
 - refactor to use create-project
 - db backup in new project bootstrap process?
 - GDPR compliance
@@ -26,6 +27,7 @@ General updates are best done whenever creating a new project since that new pro
   - Implement caching in pipeline
 - come up with a good 'children' construct (as in jsx) for twig - [github discussion](https://github.com/craftcms/cms/discussions/12671)
 - consider other less restrictive licenses that don't require license to be included in derivative works
+- determine purpose of readme vs contributing docs
 
 Server deployment process
 https://observatory.mozilla.org/
