@@ -17,22 +17,23 @@
   "license": "MIT",
   "dependencies": {
     "@alpinejs/focus": "^3.12.0",
-    "@alpinejs/ui": "^3.12.1-beta.0",
+    "@alpinejs/ui": "^3.12.3-beta.0",
+    "@csstools/postcss-oklab-function": "^3.0.1",
     "@types/alpinejs": "^3.7.1",
     "alpinejs": "^3.12.0",
     "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.21",
+    "postcss": "^8.4.27",
     "postcss-import": "^15.1.0",
     "tailwindcss": "^3.3.0",
     "typescript": "^5.0.2",
     "vite": "^4.2.1",
     "vite-plugin-manifest-sri": "^0.1.0",
     "vite-plugin-restart": "^0.3.1",
-    "vite-plugin-static-copy": "^0.15"
+    "vite-plugin-static-copy": "^0.17",
+    "xo": "^0.55"
   },
   "devDependencies": {
-    "husky": "^8.0.3",
-    "xo": "^0.54.2"
+    "husky": "^8.0.3"
   },
   "xo": {
     "prettier": true

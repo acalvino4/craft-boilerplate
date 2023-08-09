@@ -3,16 +3,13 @@ type: craftcms
 docroot: web
 php_version: "8.2"
 webserver_type: nginx-fpm
-router_http_port: "80"
-router_https_port: "443"
 xdebug_enabled: false
 additional_hostnames: []
 additional_fqdns: []
 database:
   type: postgres
   version: "14"
-nfs_mount_enabled: false
-mutagen_enabled: false
+upload_dirs: [uploads]
 project_tld: local
 use_dns_when_possible: true
 composer_version: "2"

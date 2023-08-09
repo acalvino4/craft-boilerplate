@@ -43,6 +43,7 @@ Local development requirements:
   - Typechecking
 - Easy favicon setup
 - Absolute imports from src directory
+- oklch support
 
 ### Creating New Project
 
@@ -131,6 +132,20 @@ Add the project's brand icon and logo to the `storage/rebrand/icon` and `storage
 ### Fonts
 
 Google fonts is recommended, and just involves pasting a couple lines into `wrapper.twig`. [Variable fonts](https://web.dev/variable-fonts/#variable-fonts-on-google-fonts) are highly recommended, and you can [limit your search to them](https://fonts.google.com/?vfonly=true) on google, though you have to [manually compose](https://web.dev/variable-fonts/#variable-fonts-on-google-fonts) the link. If you need to use a custom font, ensure it is in `woff2` format for best performance, place the files in `src/fonts`, and put your corresponding `@font-face` rules in `src/styles/font.css`.
+
+### Colors
+
+oklch colors are automatically handled in the build process to have a fallback for browsers and displays that don't support them. Read about the benefits of this approach. The main benefits of using this color model are [wider color gamut and more predictable pallete generation](https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl). Just use the [oklch() function](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklch) in your tailwind config:
+
+```ts
+colors: {
+  primary: {
+    100: "oklch(90% 0.3 17)",
+    200: "oklch(80% 0.3 17)",
+    ...
+  }
+}
+```
 
 ### Upstream updates
 

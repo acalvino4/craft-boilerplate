@@ -4,6 +4,7 @@ import viteRestart from 'vite-plugin-restart';
 import {viteStaticCopy} from 'vite-plugin-static-copy';
 import autoprefixer from 'autoprefixer';
 import tailwindcss from 'tailwindcss';
+import okLab from '@csstools/postcss-oklab-function';
 import type {Plugin} from 'postcss';
 import tailwindConfig from './tailwind.config.js';
 
@@ -45,7 +46,7 @@ export default defineConfig(({command}) => ({
 	},
 	css: {
 		postcss: {
-			plugins: [tailwindcss(tailwindConfig) as Plugin, autoprefixer()],
+			plugins: [tailwindcss(tailwindConfig) as Plugin, autoprefixer(), okLab()],
 		},
 	},
 	resolve: {

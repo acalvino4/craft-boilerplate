@@ -11,12 +11,13 @@
     }
   ],
   "require": {
+    "acalvino4/craft-easy-image": "1.0.0",
     "acalvino4/craft-embed-implicit-default": "1.0.1",
-    "craftcms/cms": "4.4.11",
-    "nystudio107/craft-seomatic": "4.0.25",
-    "nystudio107/craft-vite": "4.0.5",
-    "trendyminds/craft-palette": "3.1.5",
-    "verbb/navigation": "2.0.17",
+    "craftcms/cms": "4.4.17",
+    "nystudio107/craft-seomatic": "4.0.30",
+    "nystudio107/craft-vite": "4.0.6",
+    "trendyminds/craft-palette": "3.2.2",
+    "verbb/navigation": "2.0.20",
     "vlucas/phpdotenv": "^5.4.0",
     "yiisoft/yii2-redis": "^2.0"
   },
@@ -35,7 +36,8 @@
   "config": {
     "allow-plugins": {
       "craftcms/plugin-installer": true,
-      "yiisoft/yii2-composer": true
+      "yiisoft/yii2-composer": true,
+      "treeware/plant": true
     },
     "sort-packages": true,
     "optimize-autoloader": true,
